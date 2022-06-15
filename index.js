@@ -143,6 +143,7 @@ second.onchange = (e) => {
 }
 
 function start() {
+    settings.disabled = true;
     if (!(isNumeric(minutes) && isNumeric(seconds))) {
         alert('Please enter numeric values');
         button.innerText = "START"
@@ -198,6 +199,7 @@ function start() {
 function pause() {
     clearInterval(interval);
     //button.innerText = "START"
+    settings.disabled = false;
 }
 
 function returnData(input) {
