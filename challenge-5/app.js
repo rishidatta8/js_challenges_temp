@@ -159,22 +159,6 @@ let checkboxes = document.getElementsByTagName('input');
 let ul = document.getElementsByTagName('ul')[0]
 let lastChecked;
 
-const handleCheck = e => {
-  let inBetween = false;
-  if (e.shiftKey && e.target.checked) {
-    for (let i = 0; i < checkboxes.length; i++) {
-      let checkbox = checkboxes[i]
-      if (checkbox === this || checkbox === lastChecked) {
-        inBetween = !inBetween;
-      }
-      if (inBetween) {
-        checkbox.checked = true;
-      }
-    }
-  }
-  lastChecked = this;
-};
-
 for(let i = 0 ; i < episodes.length; i++){
   let episode = episodes[i]
   let li = document.createElement('li')
@@ -195,6 +179,20 @@ for(let i = 0 ; i < episodes.length; i++){
   label.appendChild(span)
   ul.appendChild(li)
 
-  input.onclick = handleCheck
+  input.onclick = e =>  {
+    let inBetween = false;
+    if (e.shiftKey && e.target.checked) {
+      for (let i = 0; i < checkboxes.length; i++) {
+        let checkbox = checkboxes[i]
+        if (checkbox === input || checkbox === lastChecked) {
+          inBetween = !inBetween;
+        }
+        if (inBetween) {
+          checkbox.checked = true;
+        }
+      }
+    }
+    lastChecked = input;
+  }
 
 }
