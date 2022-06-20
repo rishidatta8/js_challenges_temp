@@ -1,189 +1,166 @@
 const episodes = [
   {
-    'id': 1,
-    'name': 'James Q Quick\'s Origin Story'
+    id: 1,
+    name: "James Q Quick's Origin Story"
   },
   {
-    'id': 2,
-    'name': 'Amy Dutton\'s Origin Story'
+    id: 2,
+    name: "Amy Dutton's Origin Story"
   },
   {
-    'id': 3,
-    'name': 'The Tech Behind Compressed.fm'
+    id: 3,
+    name: 'The Tech Behind Compressed.fm'
+  },
+  { id: 4, name: 'Starting a New Development Project' },
+  {
+    id: 5,
+    name: 'How Do you Start a New Design Project?'
   },
   {
-    'id': 4,
-    'name': 'Starting a New Development Project'
+    id: 6,
+    name: 'Freelancing (Part 1)'
   },
   {
-    'id': 5,
-    'name': 'How Do you Start a New Design Project?'
+    id: 7,
+    name: 'Freelancing (Part 2)'
   },
   {
-    'id': 6,
-    'name': 'Freelancing (Part 1)'
+    id: 8,
+    name: 'The Tech Behind jamesqquick.com'
   },
   {
-    'id': 7,
-    'name': 'Freelancing (Part 2)'
+    id: 9,
+    name: 'Teh Tech Behind SelfTeach.me'
   },
   {
-    'id': 8,
-    'name': 'The Tech Behind jamesqquick.com'
+    id: 10,
+    name: 'Design Fundamentals (Part 1)'
   },
   {
-    'id': 9,
-    'name': 'Teh Tech Behind SelfTeach.me'
+    id: 11,
+    name: 'Design Fundamentals (Part 2)'
   },
   {
-    'id': 10,
-    'name': 'Design Fundamentals (Part 1)',
+    id: 12,
+    name: 'Productivity: Tools, Tips, and Workflows'
   },
   {
-    'id': 11,
-    'name': 'Design Fundamentals (Part 2)',
+    id: 13,
+    name: 'The Future of Code with No Code'
   },
   {
-    'id': 12,
-    'name': 'Productivity: Tools, Tips, and Workflows'
+    id: 14,
+    name: 'Building the Perfect Desk Setup'
   },
   {
-    'id': 13,
-    'name': 'The Future of Code with No Code'
+    id: 15,
+    name: 'Everything You Need to Know to Get Started in SvelteKit'
   },
   {
-    'id': 14,
-    'name': 'Building the Perfect Desk Setup'
+    id: 16,
+    name: 'Live Streaming for Beginners'
   },
   {
-    'id': 15,
-    'name': 'Everything You Need to Know to Get Started in SvelteKit'
+    id: 17,
+    name: 'All Things Automated'
   },
   {
-    'id': 16,
-    'name': 'Live Streaming for Beginners'
+    id: 18,
+    name: 'Amy Gives James a Design Consult'
   },
   {
-    'id': 17,
-    'name': 'All Things Automated'
+    id: 19,
+    name: 'Figma for Everyone'
   },
   {
-    'id': 18,
-    'name': 'Amy Gives James a Design Consult'
+    id: 20,
+    name: 'Learning and Building in Public'
   },
   {
-    'id': 19,
-    'name': 'Figma for Everyone'
+    id: 21,
+    name: 'Getting Your First Dev Job'
   },
   {
-    'id': 20,
-    'name': 'Learning and Building in Public'
+    id: 22,
+    name: 'Hiring a Designer or Getting Your First UI / UX Job'
   },
   {
-    'id': 21,
-    'name': 'Getting Your First Dev Job'
+    id: 23,
+    name: 'IRL Freelance Proposal'
   },
   {
-    'id': 22,
-    'name': 'Hiring a Designer or Getting Your First UI / UX Job'
+    id: 24,
+    name: 'Getting Started on YouTube'
   },
   {
-    'id': 23,
-    'name': 'IRL Freelance Proposal'
+    id: 25,
+    name: 'Starting your own Podcast'
   },
   {
-    'id': 24,
-    'name': 'Getting Started on YouTube'
+    id: 26,
+    name: 'How Blogging Can Change Your Career'
   },
   {
-    'id': 25,
-    'name': 'Starting your own Podcast'
+    id: 27,
+    name: 'Talking to Some of Our Favorite Content Creators'
   },
   {
-    'id': 26,
-    'name': 'How Blogging Can Change Your Career'
+    id: 28,
+    name: 'Our Favorite Things: A Crossover Episode with Web Dev Weekly'
   },
   {
-    'id': 27,
-    'name': 'Talking to Some of Our Favorite Content Creators'
+    id: 29,
+    name: 'Freelancing IRL: Unveiling a Site Redesign'
   },
   {
-    'id': 28,
-    'name': 'Our Favorite Things: A Crossover Episode with Web Dev Weekly'
+    id: 30,
+    name: 'Wordpress in 2021'
   },
   {
-    'id': 29,
-    'name': 'Freelancing IRL: Unveiling a Site Redesign'
+    id: 31,
+    name: 'Struggle Bus'
   },
   {
-    'id': 30,
-    'name': 'Wordpress in 2021'
+    id: 32,
+    name: 'Getting Started with TypeScript'
   },
   {
-    'id': 31,
-    'name': 'Struggle Bus'
+    id: 33,
+    name: 'Small Design Tweaks that Make All the Difference'
   },
   {
-    'id': 32,
-    'name': 'Getting Started with TypeScript'
+    id: 34,
+    name: 'Getting git'
   },
   {
-    'id': 33,
-    'name': 'Small Design Tweaks that Make All the Difference'
+    id: 35,
+    name: 'Crossover Episode with Purrfect Dev'
   },
   {
-    'id': 34,
-    'name': 'Getting git'
+    id: 36,
+    name: 'SVGs FTW'
   },
   {
-    'id': 35,
-    'name': 'Crossover Episode with Purrfect Dev'
-  },
-  {
-    'id': 36,
-    'name': 'SVGs FTW'
-  },
-  {
-    'id': 37,
-    'name': 'Building a Course'
+    id: 37,
+    name: 'Building a Course'
   }
 ];
 
 window.onload = () => {
-  document.onselectstart = () => {
-    return false;
-  }
-}
+  document.onselectstart = () => false;
+};
 
-let checkboxes = document.getElementsByTagName('input');
-let ul = document.getElementsByTagName('ul')[0]
+const checkboxes = document.getElementsByTagName('input');
+const ul = document.getElementsByTagName('ul')[0];
 let lastChecked;
 
-for(let i = 0 ; i < episodes.length; i++){
-  let episode = episodes[i]
-  let li = document.createElement('li')
-  let label = document.createElement('label')
-  let input = document.createElement('input')
-  let span = document.createElement('span')
-
-  label.setAttribute('for', 'episode-'+episode.id)
-  
-  input.setAttribute('type', 'checkbox')
-  input.setAttribute('name', 'episode-' + episode.id)
-  input.setAttribute('id', 'episode-' + episode.id)
-
-  span.innerText = episode.id+' || '+episode.name
-
-  li.appendChild(label)
-  label.appendChild(input)
-  label.appendChild(span)
-  ul.appendChild(li)
-
-  input.onclick = e =>  {
+const attachHandler = (temp) => {
+  const input = temp;
+  input.onclick = (e) => {
     let inBetween = false;
     if (e.shiftKey && e.target.checked) {
-      for (let i = 0; i < checkboxes.length; i++) {
-        let checkbox = checkboxes[i]
+      for (let j = 0; j < checkboxes.length; j += 1) {
+        const checkbox = checkboxes[j];
         if (checkbox === input || checkbox === lastChecked) {
           inBetween = !inBetween;
         }
@@ -193,6 +170,28 @@ for(let i = 0 ; i < episodes.length; i++){
       }
     }
     lastChecked = input;
-  }
+  };
+};
 
+for (let i = 0; i < episodes.length; i += 1) {
+  const episode = episodes[i];
+  const li = document.createElement('li');
+  const label = document.createElement('label');
+  const input = document.createElement('input');
+  const span = document.createElement('span');
+
+  label.setAttribute('for', `episode-${episode.id}`);
+
+  input.setAttribute('type', 'checkbox');
+  input.setAttribute('name', `episode-${episode.id}`);
+  input.setAttribute('id', `episode-${episode.id}`);
+
+  span.innerText = `${episode.id} || ${episode.name}`;
+
+  li.appendChild(label);
+  label.appendChild(input);
+  label.appendChild(span);
+  ul.appendChild(li);
+
+  attachHandler(input);
 }
