@@ -20,8 +20,11 @@ const sendAlert = (message) => {
 
 const isNumeric = (s) => {
   const str = s.toString();
-  if (typeof str !== 'string') return false;
-  return !Number.isNaN(str) && !Number.isNaN(parseFloat(str));
+  return (
+    !typeof str !== 'string' &&
+    !Number.isNaN(str) &&
+    !Number.isNaN(parseFloat(str))
+  );
 };
 
 const validateData = () => {

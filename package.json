@@ -1,5 +1,5 @@
 {
-  "name": "challenges-final",
+  "name": "challenges",
   "version": "1.0.0",
   "description": "Javascript Challenges",
   "main": "index.js",
@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install client/.husky"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -28,6 +29,22 @@
     "*.js": [
       "eslint",
       "prettier"
+    ],
+    "*.html": [
+      "eslint",
+      "prettier"
+    ],
+    "*.css": [
+      "eslint",
+      "prettier"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishidatta8/challenges.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rishidatta8/challenges/issues"
+  },
+  "homepage": "https://github.com/rishidatta8/challenges#readme"
 }
