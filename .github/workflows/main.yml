@@ -34,3 +34,5 @@ jobs:
         run: |
           git add .
           git commit -m "running from actions"
+          git config user.email "rishidatta8@gmail.com"
+          git config user.name "Rishi Datta"
