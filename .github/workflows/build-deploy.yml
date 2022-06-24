@@ -21,7 +21,7 @@ jobs:
     - name: Configure AWS credentials from Production account
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        role-to-assume: arn:aws:iam::641128561021:user/rishi-s3-bucket-access
+        role-to-assume: arn:aws:iam::641128561021:role/my-github-actions-role-prod
         aws-region: ap-south-1
 
     - name: Copy files to the production website with the AWS CLI
