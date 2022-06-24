@@ -1,4 +1,4 @@
-const button = document.getElementById('start/stop');
+var button = document.getElementById('start/stop');
 const minute = document.getElementById('minutes');
 const second = document.getElementById('seconds');
 const settings = document.getElementById('settings');
