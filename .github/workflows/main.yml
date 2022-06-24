@@ -8,8 +8,8 @@ jobs:
     - name: Install modules
       run: |
         npm install
-        eslint challenge-1/index.js
-        eslint challenge-2/app.js
-        eslint challenge-3/app.js
-        eslint challenge-4/app.js
-        eslint challenge-5/app.js
+        npx eslint challenge-1/index.js
+        npx eslint challenge-2/app.js
+        npx eslint challenge-3/app.js
+        npx eslint challenge-4/app.js
+        npx eslint challenge-5/app.js
