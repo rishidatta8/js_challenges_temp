@@ -11,6 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with: |
+          role-to-assume: arn:aws:iam::641128561021:user/rishi-s3-bucket-access
+          aws-region:ap-south-1
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with: |
