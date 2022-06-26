@@ -1,5 +1,5 @@
-var button = document.getElementById('start/stop');
-var minute = document.getElementById('minutes');
+const button = document.getElementById('start/stop');
+const minute = document.getElementById('minutes');
 const second = document.getElementById('seconds');
 const settings = document.getElementById('settings');
 const ring = document.getElementById('ring');

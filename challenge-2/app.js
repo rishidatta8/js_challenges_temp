@@ -161,7 +161,7 @@ const createItemOnRight = (item, addButton, checkImage) => {
 
   p2.innerText = `$${item.price}`;
 
-  divQuantityWrapper.classList.add('quantity__wrapper');
+  divQuantityWrapper.classList.add('quantity-wrapper');
 
   buttonDecrease.classList.add('decrease');
 
