@@ -23,4 +23,4 @@ jobs:
       - run: npm ci
 
       # Run ESLint
-      - run: npx eslint ./ --ext .js
+      - run: npx eslint ./ --ext .js --fix
