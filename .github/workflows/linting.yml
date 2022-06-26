@@ -32,4 +32,4 @@ jobs:
       
       # Run prettier
         name: Run prettier
-      - run: npx prettier --write
+      - run: npx prettier --write .
