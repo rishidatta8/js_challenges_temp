@@ -23,5 +23,4 @@ jobs:
       - run: npm ci
 
       # Run ESLint
-      - uses: eslint/github-action@v0,
       - run: npx eslint ./ --ext .js
