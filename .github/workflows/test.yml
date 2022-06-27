@@ -6,24 +6,8 @@ on:
     - master
 
 jobs:
-  npm:
-    name: npm install
-    runs-on: ubuntu-latest
-    steps:
-      
-      # Check out the repository
-      - uses: actions/checkout@v3
-
-      # Install Node.js
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 14
-
-      # Install your dependencies
-      - run: npm ci
   eslint:
     runs-on: ubuntu-latest
-    needs: npm
     name: Run ESLint
     steps:
      # Check out the repository
@@ -39,7 +23,10 @@ jobs:
     steps:
      # Check out the repository
       - uses: actions/checkout@v3
-      - run: npx stylelint "**/*.css"
+      - run: |
+         npm install --save-dev stylelint stylelint-config-standard
+         npm install --save-dev stylelint-config-prettier
+         npx stylelint "**/*.css"
     
   prettier:
     runs-on: ubuntu-latest
@@ -48,7 +35,9 @@ jobs:
     steps:
      # Check out the repository
       - uses: actions/checkout@v3
-      - run: npx prettier --write .
+      - run: |
+         npm install --save-dev --save-exact prettier
+         npx prettier --write .
     
   s3upload:
     runs-on: ubuntu-latest
